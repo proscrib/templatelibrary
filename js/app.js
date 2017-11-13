@@ -1,20 +1,45 @@
 // JavaScript Document
 
+// Make the entire body a menu tabbed page, in other words make all of the pages live on the home page. Thank you W3Schools for some of the guidance here.  And entheosweb.com for responsive guidance.
 
-// About these buttons
+ // tabbed content
+     // tabbed content
+    // http://www.entheosweb.com/tutorials/css/tabs.asp
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
 
-const myCampaignChoice = document.getElementById('myCampaignChoice');
-const myPressedButton = document.getElementsByClassName('pressed-button');
+  /* if in tab mode */
+    $("ul.tabs li").click(function() {
+		
+      $(".tab_content").hide();
+      var activeTab = $(this).attr("rel"); 
+      $("#"+activeTab).fadeIn();		
+		
+      $("ul.tabs li").removeClass("active");
+      $(this).addClass("active");
 
-myCampaignChoice.addEventListener("click", () => {
-	myCampaignChoice.style.backgroundColor = '#d9d9d9';
-	myCampaignChoice.style.borderColor = '#d9d9d9';
-});
-
-$("button").mouseout(function() {
-	$("button").css("background-color", "#d9d9d9");	
-});
-
-for (let i = 0; i < myPressedButton.length; i += 1) {
-	myPressedButton[i].style.color = '#40752d';	
-}
+	  $(".tab_drawer_heading").removeClass("d_active");
+	  $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+	  
+    });
+	/* if in drawer mode */
+	$(".tab_drawer_heading").click(function() {
+      
+      $(".tab_content").hide();
+      var d_activeTab = $(this).attr("rel"); 
+      $("#"+d_activeTab).fadeIn();
+	  
+	  $(".tab_drawer_heading").removeClass("d_active");
+      $(this).addClass("d_active");
+	  
+	  $("ul.tabs li").removeClass("active");
+	  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+    });
+	
+	
+	/* Extra class "tab_last" 
+	   to add border to right side
+	   of last tab */
+	$('ul.tabs li').last().addClass("tab_last");
+	
+	
