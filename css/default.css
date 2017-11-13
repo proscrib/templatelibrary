@@ -1,3 +1,149 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* This styling is from my employers color palette.  It is meant to ensure the visitor knows they are still within the best practices of my employer's policies */
+
+/*  All  */
+
+body {margin:0 auto;}
+h1,h2 {font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;font-size:30px;}
+p,font,div {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;}
+
+#body-total {margin:0 auto; width:1000px; align-content:center;}
+
+/* Responsive */
+
+@media only screen (max-width:320px) {
+	.mobile {
+	width: 100%;
+	margin: 10px auto;
+	padding: 0px 30px;
+	}
+	p {
+	text-align:left;
+	}
+}
+
+
+/*  Header  */
+
+	.header {
+	background: #5c9a1b;
+	width: 100%;	
+	padding: 15px;
+	}
+	
+	#grad-humgrn {
+    background: #5c9a1b; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#5c9a1b, #4e8317); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#5c9a1b, #4e8317); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#5c9a1b, #4e8317); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#5c9a1b, #4e8317); /* Standard syntax */
+}
+
+/*  Navigation  */
+
+	.flex-nav {
+  	display: flex;
+  	flex-wrap: wrap;
+	}
+
+/*  Body  */
+
+	#body {
+	clear: both;	
+	}
+
+		/* Style the tab buttons */
+		ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px;
+	border-bottom: 1px solid #333;
+	width: 100%;
+}
+
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 40px;
+	border-bottom: none;
+	width: 100%;
+  background: #40752d;
+}
+
+ul.tabs li {
+	float: left;
+	margin: 0;
+	cursor: pointer;
+	padding: 0px 21px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #40752d;
+	color: #f9f9f9;
+	overflow: hidden;
+	position: relative;
+  font-family: Arial, sans-serif;
+}
+
+ul.tabs li:hover {
+	background-color: #86c547;
+	color: #f7f7f7;
+}
+
+ul.tabs li.active {
+	background-color: #86c547;
+	color: #464841;
+	border-bottom: none;
+	display: block;
+  font-family: Arial, sans-serif;
+}
+
+.tab_container {
+	border: none;
+	border-top: none;
+	clear: both;
+	float: left;
+	width: 100%;
+	background: #f7f7f7;
+	overflow: auto;
+  font-family: Arial, sans-serif;
+}
+
+.tab_content {
+	padding: 20px;
+	display: none;
+}
+
+.tab_drawer_heading { display: none; }
+
+@media screen and (max-width: 480px) {
+	.tabs {
+		display: none;
+	}
+	.tab_drawer_heading {
+		background-color: #ccc;
+		color: #fff;
+		border-top: none;
+		margin: 0;
+		padding: 5px 20px;
+		display: block;
+		cursor: pointer;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	.d_active {
+		background-color: #f7f7f7;
+		color: #484641;
+	}
+}
+
+/*  Footer  */
