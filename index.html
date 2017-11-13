@@ -1,65 +1,174 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Final Project</title>
+@charset "utf-8";
+/* CSS Document */
 
-<link rel="stylesheet" href="css/default.css">
+/* This styling is from my employers color palette.  It is meant to ensure the visitor knows they are still within the best practices of my employer's policies */
 
-</head>
+/*  All  */
 
-<body>
-<div id="grad-humgrn" class="header">
-	<header><span style="font-size:44px;">Email Template Library</span><br /><span style="font-size:28px;">Start your project here</span></header>
-</div>
+body {margin:0 auto;background:#f9f9f9;}
+h1,h2 {font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;font-size:30px;}
+p,font,div {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;}
 
-	<div>
-		<ul class="tabs">
-  			<li class="active" rel="tab1">Home</li>
-  			<li rel="tab2">Library</li>
-  			<li rel="tab3">Portfolio</li>
-  			<li rel="tab4">Blog</li>
-		</ul>
-		<div class="tab_container">
-  			<h3 class="d_active tab_drawer_heading" rel="tab1">Home</h3>
-  			<div id="tab1" class="tab_content">
-  				<h2>Welcome</h2>
-    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac metus augue.</p>	
-		</div>
-  		<!-- #tab1 -->
-  		<h3 class="tab_drawer_heading" rel="tab2">Library</h3>
-		<div id="tab2" class="tab_content">
- 			<h2>Email Template Library</h2>
-    		<p>Nunc dui velit, scelerisque eu placerat volutpat, dapibus eu nisi. Vivamus eleifend vestibulum odio non vulputate.</p>
-  		</div>
-  		<!-- #tab2 -->
-  		<h3 class="tab_drawer_heading" rel="tab3">Portfolio</h3>
-  		<div id="tab3" class="tab_content">
-  			<h2>Email Portfolio</h2>
-   			<p>Nulla eleifend felis vitae velit tristique imperdiet. Etiam nec imperdiet elit. Pellentesque sem lorem, scelerisque sed facilisis sed, vestibulum sit amet eros.</p>
- 		</div>
-  		<!-- #tab3 -->
-  		<h3 class="tab_drawer_heading" rel="tab4">Blog</h3>
- 		<div id="tab4" class="tab_content">
- 			<h2>Join the conversation</h2>
-    		<p>Integer ultrices lacus sit amet lorem viverra consequat. Vivamus lacinia interdum sapien non faucibus. Maecenas bibendum, lectus at ultrices viverra, elit magna egestas magna, a adipiscing mauris justo nec eros.</p>
-  		</div>
- 	 	<!-- #tab4 --> 
-	</div>
-	<!-- .tab_container -->
+#body-total {margin:0 auto; width:1000px; align-content:center;}
 
-</div>
+/* Responsive */
 
-<div>
-    
-	<footer class="footer">
-    	<section style="">&copy; Toshca Williams Final Code Louisville Project 2017</section>
+@media only screen (max-width:320px) {
+	.header {
+	background: #5c9a1b;
+	color:#fff;
+	width: 100%;
+	font-size:24px;	
+	padding: 10px;
+	}
+	.mobile {
+	width: 100%;
+	margin: 10px auto;
+	padding: 0px 30px;
+	}
+	p {
+	text-align:left;
+	}
+	
+}
 
-	</footer>
-    
-</div>
 
-<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+/*  Header  */
 
-</body>
-</html>
+	.header {
+	background: #5c9a1b;
+	color:#fff;
+	width: 100%;	
+	padding: 50px;
+	}
+	
+	#grad-humgrn {
+    background: #5c9a1b; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#5c9a1b, #4e8317); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#5c9a1b, #4e8317); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#5c9a1b, #4e8317); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#5c9a1b, #4e8317); /* Standard syntax */
+}
+
+/*  Navigation  */
+
+	.flex-nav {
+  	display: flex;
+  	flex-wrap: wrap;
+	}
+
+/*  Body  */
+
+	#body {
+	clear: both;	
+	margin: 25px;
+	}
+
+		/* Style the tab buttons */
+		ul.tabs {
+		margin: 0;
+		padding: 0;
+		float: left;
+		list-style: none;
+		height: 32px;
+		border-bottom: 1px solid #2e7e06;
+		width: 100%;
+		}
+
+		ul.tabs {
+		margin: 0;
+		padding: 0;
+		float: left;
+		list-style: none;
+		height: 40px;
+		border-bottom: none;
+		width: 100%;
+  		background: #40752d;
+		}
+
+		ul.tabs li {
+		float: left;
+		margin: 0;
+		cursor: pointer;
+		padding: 0px 21px;
+		height: 40px;
+		line-height: 40px;
+		background-color: #40752d;
+		color: #f9f9f9;
+		overflow: hidden;
+		position: relative;
+  		font-family: Arial, sans-serif;
+		}
+
+		ul.tabs li:hover {
+		background-color: #86c547;
+		color: #f7f7f7;
+		}
+
+		ul.tabs li.active {
+		background-color: #86c547;
+		color: #464841;
+		border-bottom: none;
+		display: block;
+  		font-family: Arial, sans-serif;
+		}
+
+		.tab_container {
+		border: none;
+		border-top: none;
+		clear: both;
+		float: left;
+		width: 100%;
+		background: #f7f7f7;
+		overflow: auto;
+  		font-family: Arial, sans-serif;
+		}
+
+		.tab_content {
+		padding: 20px;
+		display: none;
+		}
+
+		.tab_drawer_heading { display: none; }
+
+		@media screen and (max-width: 480px) {
+		.tabs {
+		display: none;
+		}
+		.tab_drawer_heading {
+		background-color: #40752d;
+		color: #fff;
+		border-top: none;
+		border-bottom: 1px solid #5c9a1b;
+		margin: 0;
+		padding: 5px 20px;
+		display: block;
+		cursor: pointer;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		}
+		.d_active {
+		background-color: #86c547;
+		color: #484641;
+		}
+		}
+
+/*  Footer  */
+	
+	.footer {
+	position: fixed;
+	bottom: 0;
+	clear: both;
+	width:100%;
+	border-top: 1px solid #d9d9d9;
+	background: #f0f0f0;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding:30px 0; 
+	font-size:16px;
+	margin-top:25px;	
+	}
