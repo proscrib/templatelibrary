@@ -14,6 +14,13 @@ p,font,div {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 /* Responsive */
 
 @media only screen (max-width:320px) {
+	.header {
+	background: #5c9a1b;
+	color:#fff;
+	width: 100%;
+	font-size:24px;	
+	padding: 10px;
+	}
 	.mobile {
 	width: 100%;
 	margin: 10px auto;
@@ -22,6 +29,7 @@ p,font,div {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	p {
 	text-align:left;
 	}
+	
 }
 
 
@@ -29,8 +37,9 @@ p,font,div {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 	.header {
 	background: #5c9a1b;
+	color:#fff;
 	width: 100%;	
-	padding: 15px;
+	padding: 50px;
 	}
 	
 	#grad-humgrn {
