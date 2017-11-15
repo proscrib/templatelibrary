@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Final Project</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code Louisville ~ Final Project</title>
 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/default.css">
 <link rel="stylesheet" href="css/tab.css">
 
@@ -29,66 +30,57 @@ Optional Frontend Framework
 <body>
     
 <div id="grad-humgrn" class="header">
-	<!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light style="background-color: #5c9a1b;" fixed-top">
-    <div class="container">
-    	<a class="navbar-brand" href="http://connect.humana.com/sites/email/SitePages/Home.aspx" target="_blank">Humana Email, Mobile and Interactive Technology</a>
-        <button class="navbar-toggler order-1 mr-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-lable="Toggle navigation">
-        	<span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collpase navbar-collapse" id="navbarNavAltMarkup">
-        	<div class="navbar-nav">
-            	<a class="nav-item nav-link" href="#Contact">Contact Us <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#Social">Follow Us</a>
-            </div>
-        </div>
-        </div>
+	<nav class="navbar navbar-expand-lg">
+    	<div class="container">
+    		<a class="navbar-brand order-1 mr-0 navbar-dark" href="http://connect.humana.com/sites/email/SitePages/Home.aspx" target="_blank">Email, Mobile, SMS and Interactive Strategy Team</a>
+       		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-lable="Toggle navigation">
+        		<span class="navbar-toggler-icon"></span>
+        	</button>
+        	<div class="collpase navbar-collapse" id="navbarNavAltMarkup">
+        		<div class="navbar-nav">
+            		<a class="nav-item nav-link" href="#Contact">Contact Us <span class="sr-only">(current)</span></a>
+                	<a class="nav-item nav-link" href="#Social">Follow Us</a>
+            	</div>
+        	</div>
+    	</div>
     </nav>
-    <!-- /navbar -->
 	<header><span style="font-size:44px;">Email Template Library</span><br /><span style="font-size:28px;">Start your project here</span></header>
-    
-    
 </div>
-    
-    <!--Signup form -->
-
-    
 </div>
 
-	<div>
-		<ul class="tabs">
-  			<li class="active" rel="tab1">Home</li>
-  			<li rel="tab2">Library</li>
-  			<li rel="tab3">Portfolio</li>
-  			<li rel="tab4">Blog</li>
-		</ul>
-		<div class="tab_container" id="body">
-  			<h3 class="d_active tab_drawer_heading" rel="tab1">Home</h3>
-  			<div id="tab1" class="tab_content">
-  				<h2>Welcome</h2>
-    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac metus augue.</p>	
-		</div>
-  		<!-- #tab1 -->
-  		<h3 class="tab_drawer_heading" rel="tab2">Library</h3>
-		<div id="tab2" class="tab_content">
- 			<h2>Email Template Library</h2>
-    		<p>Nunc dui velit, scelerisque eu placerat volutpat, dapibus eu nisi. Vivamus eleifend vestibulum odio non vulputate.</p>
-  		</div>
-  		<!-- #tab2 -->
-  		<h3 class="tab_drawer_heading" rel="tab3">Portfolio</h3>
-  		<div id="tab3" class="tab_content">
-  			<h2>Email Portfolio</h2>
-   			<p>Nulla eleifend felis vitae velit tristique imperdiet. Etiam nec imperdiet elit. Pellentesque sem lorem, scelerisque sed facilisis sed, vestibulum sit amet eros.</p>
- 		</div>
-  		<!-- #tab3 -->
-  		<h3 class="tab_drawer_heading" rel="tab4">Blog</h3>
- 		<div id="tab4" class="tab_content">
- 			<h2>Join the conversation</h2>
-    		<p>Integer ultrices lacus sit amet lorem viverra consequat. Vivamus lacinia interdum sapien non faucibus. Maecenas bibendum, lectus at ultrices viverra, elit magna egestas magna, a adipiscing mauris justo nec eros.</p>
-  		</div>
- 	 	<!-- #tab4 --> 
-	</div>
-	<!-- .tab_container -->
+<div>
+<!-- Responsive Tabbed Navigation and Body -->
+
+<div class="tab-nav-container">
+	  <div class="tab-row">
+    <a href="javascript:void(0)" onclick="openCity(event, 'Home');">
+      <div class="w3-third tab-link tab-hover-light-green tab-padding">Home</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Library');">
+      <div class="w3-third tab-link tab-hover-light-green tab-padding">Library</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Portfolio');">
+      <div class="w3-third tab-link tab-hover-light-green tab-padding">Portfolio</div>
+    </a>
+  </div>
+</div>
+
+<div class="tab-container">
+  <div id="Home" class="tab-container archive" style="display:none">
+    <h2>Welcome</h2>
+    <p>We work across many groups from support to strategy. Start your project with one of our templates.</p>
+  </div>
+
+  <div id="Library" class="tab-container archive" style="display:none">
+    <h2>Library</h2>
+    <p>Paris is the capital of France.</p> 
+  </div>
+
+  <div id="Portfolio" class="tab-container archive" style="display:none">
+    <h2>Portfolio</h2>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+</div>
 
 </div>
 
