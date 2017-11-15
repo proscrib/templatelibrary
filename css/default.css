@@ -30,6 +30,7 @@ p,font,div {
 	div.header,span.subhead[class=wrapper]{
 		width:100% !important;
 		padding:10px;
+		margin:0px !important;
 		}
 	.header {
 		color:#fff;
@@ -47,14 +48,12 @@ p,font,div {
 		width: 90%;
 		margin: 10px auto;
 		padding: 0px 10px;
-		}
-	p {
-		text-align:left;
-		}
+		}	
 	img[class=full_img], section[class=full_sec] {
-		width: 100%!important;
+		width: 100% !important;
 		height: auto !important;
 		max-width: 100% !important;
+		margin: 0px !important;
 		}
 	img[class=hide], section[class=hide], p[class=hide] {
 		display: none !important;
@@ -85,10 +84,22 @@ p,font,div {
 		}
 	section.flex-welcome, section.flex-nav {
   		width: 100% !important;
-  		margin: 10px;
+  		margin: 0px !important;
 		height: auto !important;
+		padding:0px !important;
 		}
 	}
+	@media screen and (min-width:720px) and (max-width:1239px) {
+		section.flex-welcome, section.flex-nav {
+  		width: 100% !important;
+  		margin: 0px !important;
+		height: auto !important;
+		padding:0px !important;
+		}
+		img[class=hide], section[class=hide], p[class=hide] {
+		display: none !important;
+		}
+		}
 
 /*  Header  */
 
@@ -122,7 +133,7 @@ p,font,div {
   	align-content: center;
 	}
 section.flex-welcome {
-  	width: 50%;
+  	width: 60%;
   	margin: 10px;
   	display: flex;
   	flex-wrap: wrap;
