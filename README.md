@@ -7,3 +7,10 @@
 <h3>Resources</h3>
 
 <p>I've been pulling from several areas, some from what I've collected through Treehouse and Slack MDN, Bootstrap, others from my history of learning on my own, like <a href="https://www.w3schools.com/w3schools">w3schools.com</a>.</p>
+
+<h2>HOW TO PREVIEW</h2>
+<ul type="1">
+<li>Go to <a href="http://htmlpreview.github.io/?" target="_blank">GitHub & BitBucket HTML Preview</a></li>
+<li>Input this url: https://github.com/proscrib/templatelibrary/blob/master/index.html</li>
+<li>And then you should see the mountains of green!</li>
+</ul>
