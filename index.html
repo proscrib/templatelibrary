@@ -9,20 +9,6 @@
 <link rel="stylesheet" href="css/tab.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<!-- 
-
-Project Requirements
-Responsive
-Custom CSS
-Custom JS
-User Interactivity
-Comments
-Repository
-README
-Optional Frontend Framework
-
- -->
-
 <!-- Bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
@@ -68,11 +54,44 @@ Optional Frontend Framework
      	</section>
     	<section class="flex-nav w3-third">
     		<div class="flex-container">
-    			<a href="../campaigns.html" class="nav-block" id="shad-box">Campaign</a>
-        		<a class="nav-block">Newsletter</a>
-        		<a class="nav-block">Notice</a>
-        		<a class="nav-block">Event</a>    
+    			<div class="nav-block hover-shadow" onclick="openModal();currentSlide(1)">Campaign</div>
+        		<div class="nav-block">Newsletter</div>
+        		<div class="nav-block">Notice</div>
+        		<div class="nav-block">Event</div>    
     		</div>
+            
+            <!-- Lightbox -->
+            
+            <div class="row">
+  <div class="column">
+    <img src="img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+ 	<div style="padding:20px;">
+    	<h1>&#x1F4E7;  Campaigns</h1>
+        <p>Defined: Email marketing campaigns can also be comprised of several rounds of messages meant to build familiarity and trust around a product or service. In the broadest sense, any email sent to a subscriber list of customers or prospects can be considered email marketing. ~icontact.com</p>
+        <p><a href="" style="font-size:16px;color:#aa005f;font-weight:bold" target="_blank">Let's start browsing <strong>&#x2192;</strong></a> It won't take you anywhere but one day... in a galaxy</p>
+        <img src="https://www.dropbox.com/s/r0o1l9khw9r849z/shutterstock_353676692_emailcampaign.png?raw=1" width="800">
+    </div>
+
+  </div>
+</div>
+            
+            
     	</section>
         
 
