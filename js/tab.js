@@ -20,3 +20,20 @@ function openArchive(evt, archiveName) {
 $(document).ready(function(){
 	$('Home a:first').tab('show');
 });
+
+//I want the Home tab to open on page load
+
+ $('[data-toggle="tabajax"]').click(function(e) {
+    var $this = $(this),
+      loadurl = $this.attr('href'),
+      targ = $this.attr('data-target');
+
+    $.get(loadurl, function(data) {
+      $(targ).html(data);
+    });
+
+    $this.tab('show');
+    return false;
+  });
+
+  $('[data-toggle="tabajax"]:eq(0)').trigger('click');
