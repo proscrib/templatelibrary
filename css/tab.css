@@ -1,7 +1,7 @@
 /*  Tabbed Navigation and Body  */
 
 .tab-nav-container{background-color:#2B4D07;}
-.tab-container{padding:25px 0px 50px 30px;background-color:#fff;}
+.tab-container{padding:25px 0px 50px 30px;background-color:#fff;display:flex;flex-wrap:wrap;width:100%;}
 .tab-row{content:"";display:table;clear:both;padding-left:40px;}
 .tab-link {text-decoration:none;color:#fff;font-size:16px;}
 .tab-padding{padding:8px 16px!important;}
@@ -15,3 +15,6 @@
 @media screen and (min-width:601px){.tab-col.m1{width:8.33333%}.tab-col.m2{width:16.66666%}.tab-col.m3,.tab-quarter{width:24.99999%}.tab-col.m4,.tab-third{width:33.33333%}}
 
 @media screen and (max-width:732px){.tab-border-lime,.tab-hover-border-lime:hover{width:100%;border-color:#86c547!important}.tab-col.m1{width:8.33333%}.tab-col.m2{width:16.66666%}.tab-col.m3,.tab-quarter{width:100%}.tab-col.m4,.tab-third{width:100%}.tab-container{padding:5px;background-color:#fff;}.tab-row{padding-left:5px;}}
+
+
+
