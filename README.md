@@ -10,6 +10,7 @@
 
 <h2>HOW TO PREVIEW</h2>
 <ul type="1">
+<li>DO NOT USE Internet Explorer</li>
 <li>Go to <a href="http://htmlpreview.github.io/?" target="_blank">GitHub & BitBucket HTML Preview</a></li>
 <li>Input this url: https://github.com/proscrib/templatelibrary/blob/master/index.html</li>
 <li>And then you should see the mountains of green!</li>
