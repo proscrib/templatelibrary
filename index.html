@@ -24,8 +24,8 @@
     		<!-- Get a tab to be active on page load -->
         	<!-- /Is it active -->
         
-       	 	<a href="javascript:void(0)" onclick="openArchive(event, 'Home');">
-      			<div class="tab-third tab-link tab-hover-light-green tab-padding">Home</div>
+       	 	<a href="javascript:void(0)" onclick="openArchive(event, 'Home');" data-target="#home" class="media_node active section" data-toggle="tabajax">
+      			<div class="tab-third tab-link active tab-hover-light-green tab-padding">Home</div>
     		</a>
     		<a href="javascript:void(0)" onclick="openArchive(event, 'Library');">
       			<div class="tab-third tab-link tab-hover-light-green tab-padding">Library</div>
@@ -40,7 +40,7 @@
 		<!-- Get a tab to be active on page load -->    
     	<!-- /Is it active -->	
 
-		<div id="Home" class="tab-container archive" style="display:none">
+		<div id="Home" class="tab-container archive">
 			<section class="full_img flex-welcome tab-twothird">
     			<h2>Welcome</h2>
     			<p>We work across many groups from support to strategy. Start your project with one of our templates.</p>
