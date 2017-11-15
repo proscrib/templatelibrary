@@ -21,7 +21,8 @@ $(document).ready(function(){
 	$('Home a:first').tab('show');
 });
 
-//I want the Home tab to open on page load
+
+//I want the Home tab content to open on page load
 
  $('[data-toggle="tabajax"]').click(function(e) {
     var $this = $(this),
@@ -36,4 +37,4 @@ $(document).ready(function(){
     return false;
   });
 
-  $('[data-toggle="tabajax"]:eq(0)').trigger('click');
+  $('[data-toggle="tabajax"]:eq(0)').trigger('');
