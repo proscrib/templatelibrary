@@ -7,106 +7,94 @@
 <link rel="stylesheet" href="css/default.css">
 <link rel="stylesheet" href="css/tab.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<!-- Bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
 </head>
 
 <body>
-    
+  
 <div id="grad-humgrn">
 	<header class="logo header"><span style="font-size:3em;">Email Template Library</span><br /><span class="subhead" style="font-size:20px;">Digital Marketing: Email, Mobile, SMS and Interactive Strategy Team</span></header>
 </div>
 
 <div>
 <!-- Responsive Tabbed Navigation and Body -->
-
-<div class="tab-nav-container">
-	<div class="tab-row">
-    	<!-- Get a tab to be active on page load -->
-        <!-- /Is it active -->
+	<div class="tab-nav-container">
+		<div class="tab-row">
+    		<!-- Get a tab to be active on page load -->
+        	<!-- /Is it active -->
         
-        <a href="javascript:void(0)" onclick="openArchive(event, 'Home');">
-      		<div class="tab-third tab-link tab-hover-light-green tab-padding">Home</div>
-    	</a>
-    	<a href="javascript:void(0)" onclick="openArchive(event, 'Library');">
-      		<div class="tab-third tab-link tab-hover-light-green tab-padding">Library</div>
-    	</a>
-    	<a href="javascript:void(0)" onclick="openArchive(event, 'Portfolio');">
-      		<div class="tab-third tab-link tab-hover-light-green tab-padding">Portfolio</div>
-    	</a>
-  	</div>
-</div>
+       	 	<a href="javascript:void(0)" onclick="openArchive(event, 'Home');">
+      			<div class="tab-third tab-link tab-hover-light-green tab-padding">Home</div>
+    		</a>
+    		<a href="javascript:void(0)" onclick="openArchive(event, 'Library');">
+      			<div class="tab-third tab-link tab-hover-light-green tab-padding">Library</div>
+    		</a>
+    		<a href="javascript:void(0)" onclick="openArchive(event, 'Portfolio');">
+      			<div class="tab-third tab-link tab-hover-light-green tab-padding">Portfolio</div>
+    		</a>
+  		</div>
+	</div>
 
-<div class="tab-container">
-	<!-- Get a tab to be active on page load -->    
-    <!-- /Is it active -->	
+	<div class="tab-container">
+		<!-- Get a tab to be active on page load -->    
+    	<!-- /Is it active -->	
 
-<div id="Home" class="tab-container archive" style="display:none">
-
-  		<section class="flex-welcome w3-twothird">
-    		<h2>Welcome</h2>
-    		<p>We work across many groups from support to strategy. Start your project with one of our templates.</p>
-            <div style="display:block;"><img src="https://www.dropbox.com/s/1zjmxulgm329b7p/project.png?raw=1" height="350" /></div> 
+		<div id="Home" class="tab-container archive" style="display:none">
+			<section class="full_img flex-welcome tab-twothird">
+    			<h2>Welcome</h2>
+    			<p>We work across many groups from support to strategy. Start your project with one of our templates.</p>
+            	<div style="display:block;"><img src="https://www.dropbox.com/s/1zjmxulgm329b7p/project.png?raw=1" class="hide" height="450" /></div> 
+        	</section>
+    		<section class="flex-nav tab-third">
+    			<div class="flex-container">
+    				<div class="nav-block hover-shadow" onclick="openModal();currentSlide(1)">Campaign</div>
+        			<div class="nav-block">Newsletter</div>
+        			<div class="nav-block">Notice</div>
+        			<div class="nav-block">Event</div>    
+    			</div>
+        	</section>
             
-     	</section>
-    	<section class="flex-nav w3-third">
-    		<div class="flex-container">
-    			<div class="nav-block hover-shadow" onclick="openModal();currentSlide(1)">Campaign</div>
-        		<div class="nav-block">Newsletter</div>
-        		<div class="nav-block">Notice</div>
-        		<div class="nav-block">Event</div>    
+    		<!-- Lightbox -->            
+			<div id="myModal" class="modal">
+  				<span class="close cursor" onclick="closeModal()">&times;</span>
+  				<div class="modal-content">
+                	<div style="padding:20px;">
+    					<h1>&#x1F4E7;  Campaigns</h1>
+        				<p>Defined: Email marketing campaigns can also be comprised of several rounds of messages meant to build familiarity and trust around a product or service. In the broadest sense, any email sent to a subscriber list of customers or prospects can be considered email marketing. ~icontact.com</p>
+        				<p><a href="" style="font-size:16px;color:#aa005f;font-weight:bold" target="_blank">Let's start browsing <strong>&#x2192;</strong></a> It won't take you anywhere but one day... in a galaxy</p>
+        				<img src="https://www.dropbox.com/s/r0o1l9khw9r849z/shutterstock_353676692_emailcampaign.png?raw=1" class="full_img" width="800" />
+    				</div>
+  				</div>
+			</div>
+ 		</div>
+  		<div id="Library" class="tab-container archive" style="display:none">
+  			<div class="flex-welcome tab-half">
+    			<h2>Library</h2>
+    			<p>Yep! This is where my library is going. I am thinking about doing a menu on the left, and either some anchors on the right or a slide show that has a download button.  I need to think about it further.</p> 
     		</div>
-            
-            <!-- Lightbox -->
-            
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
- 	<div style="padding:20px;">
-    	<h1>&#x1F4E7;  Campaigns</h1>
-        <p>Defined: Email marketing campaigns can also be comprised of several rounds of messages meant to build familiarity and trust around a product or service. In the broadest sense, any email sent to a subscriber list of customers or prospects can be considered email marketing. ~icontact.com</p>
-        <p><a href="" style="font-size:16px;color:#aa005f;font-weight:bold" target="_blank">Let's start browsing <strong>&#x2192;</strong></a> It won't take you anywhere but one day... in a galaxy</p>
-        <img src="https://www.dropbox.com/s/r0o1l9khw9r849z/shutterstock_353676692_emailcampaign.png?raw=1" width="800">
-    </div>
-
-  </div>
-</div>
-            
-</section>
-        
-
-</div>
-
-  <div id="Library" class="tab-container archive" style="display:none">
-    <h2>Library</h2>
-    <p>Paris is the capital of France.</p> 
-  </div>
-
-  <div id="Portfolio" class="tab-container archive" style="display:none">
-    <h2>Portfolio</h2>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
-</div>
-
+    		<div class="flex-welcome tab-half"><img class="full_img" width="200" /></div>
+  		</div>
+        <div id="Portfolio" class="tab-container archive" style="display:none">
+  			<div class="flex-welcome tab-half">
+    			<h2>Portfolio</h2>
+    			<p>As a designer, we always want to know how we are growing in our skills.  Having a portfolio can showcase many things. In regards to email, there's a/b/c/d testing, subject line testing, live content implementation and much much more. I think for the portfolio, I am looking to have a lightbox layout as well, possibly slides, but the lightbox would include the template in multiple client package, history on the campaign and maybe even a comments blog. Decisions, decisions...</p>
+    		</div>
+    		<div class="flex-welcome tab-half"><img class="full_img" width="200" /></div>
+  		</div>
+	</div>
 </div>
 
 <div>
-    
-	<footer class="footer">
+    <footer class="footer">
     	<section style="">&copy; Toshca Williams Final Code Louisville Project 2017</section>
-
-	</footer>
-    
+	</footer>    
 </div>
 
 <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/tab.js" type="text/javascript" charset="utf-8"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
 
 </body>
 </html>
