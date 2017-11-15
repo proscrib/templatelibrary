@@ -3,7 +3,7 @@
 // Make the entire body a menu tabbed page, in other words make all of the pages live on the home page. Thank you W3Schools for some of the guidance here.  And entheosweb.com for responsive guidance.
 
  // tabbed content
-function openCity(evt, archiveName) {
+function openArchive(evt, archiveName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("archive");
   for (i = 0; i < x.length; i++) {
@@ -16,3 +16,7 @@ function openCity(evt, archiveName) {
   document.getElementById(archiveName).style.display = "block";
   evt.currentTarget.firstElementChild.className += " tab-border-lime";
 }
+
+$(document).ready(function(){
+	$('Home a:first').tab('show');
+});
