@@ -4,16 +4,33 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Code Louisville ~ Final Project</title>
 
+
 <link rel="stylesheet" href="css/default.css">
 <link rel="stylesheet" href="css/tab.css">
+
+<!-- 
+
+Project Requirements
+Responsive
+Custom CSS
+Custom JS
+User Interactivity
+Comments
+Repository
+README
+Optional Frontend Framework
+
+ -->
+
+<!-- Bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
 </head>
 
 <body>
     
-<div id="grad-humgrn" class="header">
-	<header><span style="font-size:44px;" class="logo">Email Template Library</span><br /><span style="font-size:20px;">Digital Marketing: Email, Mobile, SMS and Interactive Strategy Team</span></header>
+<div id="grad-humgrn">
+	<header class="logo header"><span style="font-size:3em;">Email Template Library</span><br /><span class="subhead" style="font-size:20px;">Digital Marketing: Email, Mobile, SMS and Interactive Strategy Team</span></header>
 </div>
 </div>
 
@@ -21,20 +38,26 @@
 <!-- Responsive Tabbed Navigation and Body -->
 
 <div class="tab-nav-container">
-	  <div class="tab-row">
-    <a href="javascript:void(0)" onclick="openCity(event, 'Home');">
-      <div class="tab-third tab-link tab-hover-light-green tab-padding">Home</div>
-    </a>
-    <a href="javascript:void(0)" onclick="openCity(event, 'Library');">
-      <div class="tab-third tab-link tab-hover-light-green tab-padding">Library</div>
-    </a>
-    <a href="javascript:void(0)" onclick="openCity(event, 'Portfolio');">
-      <div class="tab-third tab-link tab-hover-light-green tab-padding">Portfolio</div>
-    </a>
-  </div>
+	<div class="tab-row">
+    	<!-- Get a tab to be active on page load -->
+        <!-- /Is it active -->
+        
+        <a href="javascript:void(0)" onclick="openArchive(event, 'Home');">
+      		<div class="tab-third tab-link tab-hover-light-green tab-padding">Home</div>
+    	</a>
+    	<a href="javascript:void(0)" onclick="openArchive(event, 'Library');">
+      		<div class="tab-third tab-link tab-hover-light-green tab-padding">Library</div>
+    	</a>
+    	<a href="javascript:void(0)" onclick="openArchive(event, 'Portfolio');">
+      		<div class="tab-third tab-link tab-hover-light-green tab-padding">Portfolio</div>
+    	</a>
+  	</div>
 </div>
 
 <div class="tab-container">
+	<!-- Get a tab to be active on page load -->    
+    <!-- /Is it active -->	
+
   <div id="Home" class="tab-container archive" style="display:none">
     <h2>Welcome</h2>
     <p>We work across many groups from support to strategy. Start your project with one of our templates.</p>
@@ -64,7 +87,9 @@
 
 <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/tab.js" type="text/javascript" charset="utf-8"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
