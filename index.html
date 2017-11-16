@@ -6,31 +6,50 @@
 
 <link rel="stylesheet" href="css/default.css">
 <link rel="stylesheet" href="css/tab.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">	
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- 
+
+Project Requirements
+Responsive
+Custom CSS
+Custom JS
+User Interactivity
+Comments
+Repository
+README
+Optional Frontend Framework
+
+ -->
 
 </head>
 
 <body>
   
-<div id="grad-humgrn">
-	<header class="logo header"><span style="font-size:3em;">Email Template Library</span><br /><span class="subhead" style="font-size:20px;">Digital Marketing: Email, Mobile, SMS and Interactive Strategy Team</span></header>
+
+	<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="color:#fff;font-size:44px;">Template Library</h1>
+    <p style="color:#fff;">Start your project here</p>
+    <button>Browse</button>
+  </div>
 </div>
 
 <div>
 <!-- Responsive Tabbed Navigation and Body -->
-	<div class="tab-nav-container">
+	<div class="tab-nav-container" id="grad-blue">
 		<div class="tab-row">
     		<!-- Get a tab to be active on page load -->
         	<!-- /Is it active -->
         
        	 	<a href="javascript:void(0)" onclick="openArchive(event, 'Home');" data-target="#home" class="media_node active section" data-toggle="tabajax">
-      			<div class="tab-third tab-link active tab-hover-light-green tab-padding">Home</div>
+      			<div class="tab-third tab-link active tab-hover-light-blue tab-padding">Home</div>
     		</a>
     		<a href="javascript:void(0)" onclick="openArchive(event, 'Library');">
-      			<div class="tab-third tab-link tab-hover-light-green tab-padding">Library</div>
+      			<div class="tab-third tab-link tab-hover-light-blue tab-padding">Library</div>
     		</a>
     		<a href="javascript:void(0)" onclick="openArchive(event, 'Portfolio');">
-      			<div class="tab-third tab-link tab-hover-light-green tab-padding">Portfolio</div>
+      			<div class="tab-third tab-link tab-hover-light-blue tab-padding">Portfolio</div>
     		</a>
   		</div>
 	</div>
@@ -42,9 +61,9 @@
 		<div id="Home" class="tab-container archive">
 			<section class="flex-welcome tab-twothird">
             	<div style="flex-direction:column;">
-    			<h2>Welcome</h2>
+    			<h1 style="color:#2B6791">Welcome</h1>
     			<p>We work across many groups from support to strategy. Start your project with one of our templates.</p>
-            	<img src="https://www.dropbox.com/s/1zjmxulgm329b7p/project.png?raw=1" class="hide" align="center" height="475" />
+            	<img src="https://www.dropbox.com/s/1zjmxulgm329b7p/project.png?raw=1" class="hide" align="center" height="450" />
                 </div>
         	</section>
     		<section class="flex-nav tab-third">
@@ -74,7 +93,7 @@
     			<h2>Library</h2>
     			<p>Yep! This is where my library is going. I am thinking about doing a menu on the left, and either some anchors on the right or a slide show that has a download button.  I need to think about it further.</p> 
     		</div>
-    		<div class="flex-nav tab-half"><img class="full_img" width="200" /></div>
+    		<div class="flex-nav tab-third">&nbsp;</div>
   		</div>
         <div id="Portfolio" class="tab-container archive" style="display:none">
   			<div class="flex-welcome tab-half">
