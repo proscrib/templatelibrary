@@ -1,10 +1,10 @@
 /*  Tabbed Navigation and Body  */
 
 .tab-nav-container{
-	background-color:#2B4D07;
+	background-color:#183A51;
 	}
 .tab-container{
-	padding:25px 0px 50px 30px;
+	padding:0px 0px 50px 30px;
 	background-color:#fff;
 	display:flex;
 	flex-wrap:wrap;
@@ -24,18 +24,15 @@
 .tab-padding{
 	padding:8px 16px!important;
 	}
-.tab-light-green,.tab-hover-light-green:hover,.tab-light-green,.tab-hover-light-green:hover{
-	color:#1b5b2d!important;
-	background-color:#86c547!important;
+.tab-light-blue,.tab-hover-light-blue:hover,.tab-light-blue,.tab-hover-light-blue:hover{
+	color:#f0f0f0!important;
+	background-color:#2B6791!important;
 	}
 .tab-container:after,.tab-container:before,.tab-panel:after,.tab-panel:before,.tab-row:after,.tab-row:before,.tab-row-padding:after,.tab-row-padding:before,
 .tab-cell-row:before,.tab-cell-row:after,.tab-clear:after,.tab-clear:before,.tab-bar:before,.tab-bar:after{
 	content:"";
 	display:table;
 	clear:both;
-	}
-.tab-border-lime,.tab-hover-border-lime:hover{
-	border-color:#86c547!important;
 	}
 .tab-col,.tab-half,.tab-third,.tab-twothird,.tab-threequarter,.tab-quarter{
 	float:left;
@@ -70,10 +67,6 @@
 	}
 
 @media screen only and (max-width:312px){
-	.tab-border-lime,.tab-hover-border-lime:hover{
-		width:100%;
-		border-color:#86c547!important;
-		}
 	.tab-col.m1{
 		width:100%
 		}
@@ -95,4 +88,11 @@
 	.tab-row[class=tr-mob]{
 		padding-left:5px;
 		}
+	.tab-hover-light-green{
+		width: 100%;
+		margin:0px !important;
+		}
 	}
+
+
+
