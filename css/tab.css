@@ -4,7 +4,7 @@
 	background-color:#183A51;
 	}
 .tab-container{
-	padding:10px 0px 50px 30px;
+	padding:10px 5px 50px 15px;
 	background-color:#fff;
 	display:flex;
 	flex-wrap:wrap;
@@ -14,7 +14,6 @@
 	content:"";
 	display:table;
 	clear:both;
-	padding-left:40px;
 	}
 .tab-link {
 	text-decoration:none;
