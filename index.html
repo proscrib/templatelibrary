@@ -45,14 +45,14 @@
     	<!-- /Is it active -->	
 
 		<div id="Home" class="tab-container archive">
-			<section class="flex-welcome tab-twothird">
+			<section class="flex-welcome tab-quarter">
             	<div style="flex-direction:column;">
     			<h1 style="color:#2B6791">Welcome</h1>
     			<p>We work across many groups from support to strategy. Start your project with one of our templates.</p>
             	<img src="https://www.dropbox.com/s/1zjmxulgm329b7p/project.png?raw=1" class="hide" align="center" height="450" />
                 </div>
         	</section>
-    		<section class="flex-nav tab-third">
+    		<section class="flex-nav tab-threequarter">
     			<div class="flex-container" style="margin-bottom:50px;">
     				<div class="nav-block hover-shadow" onclick="openModal();currentSlide(1)">Campaign</div>
         			<div class="nav-block">Newsletter</div>
@@ -75,12 +75,50 @@
 			</div>
  		</div>
   		<div id="Library" class="tab-container archive" style="display:none">
-  			<div class="flex-welcome tab-half">
-    			<h1 style="color:#2B6791">Library</h1>
-    			<p>Yep! This is where my library is going. I am thinking about doing a menu on the left, and either some anchors on the right or a slide show that has a download button.  I need to think about it further.</p> 
-    		</div>
-    		<div class="flex-nav tab-third">&nbsp;</div>
-  		</div>
+  			<!-- Image Gallery -->
+            <h1 style="color:#2B6791">Library</h1>
+			<p>Yep! This is where my library is going. I am thinking about doing a menu on the left, and either some anchors on the right or a slide show that has a download button.  I need to think about it further. I'm not sure exactly how I want to lay this out but I will need a graphic, a description and a download button.</p> 
+
+			<div class="responsive">
+  				<div class="gallery">
+    				<a target="_blank" href="img_fjords.jpg">
+      					<img src="img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+    				</a>
+    				<div class="desc">Add a description of the image here</div>
+  				</div>
+			</div>
+
+			<div class="responsive">
+  				<div class="gallery">
+    				<a target="_blank" href="img_forest.jpg">
+      					<img src="img_forest.jpg" alt="Forest" width="600" height="400">
+    				</a>
+    				<div class="desc">Add a description of the image here</div>
+  				</div>
+			</div>
+
+			<div class="responsive">
+  				<div class="gallery">
+    				<a target="_blank" href="img_lights.jpg">
+      					<img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    				</a>
+    				<div class="desc">Add a description of the image here</div>
+  				</div>
+			</div>
+
+			<div class="responsive">
+  				<div class="gallery">
+    				<a target="_blank" href="img_mountains.jpg">
+      					<img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    				</a>
+    				<div class="desc">Add a description of the image here</div>
+  				</div>
+			</div>
+
+			<div class="clearfix"></div>
+			<!-- /Img Gall -->            
+        </div>
+        
         <div id="Portfolio" class="tab-container archive" style="display:none">
   			<div class="flex-welcome tab-half">
     			<h1  style="color:#2B6791">Portfolio</h1>
@@ -99,7 +137,6 @@
 
 <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/tab.js" type="text/javascript" charset="utf-8"></script>
-
 
 </body>
 </html>
