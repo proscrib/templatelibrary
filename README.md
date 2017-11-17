@@ -12,6 +12,7 @@
   <li>The images are housed on dropbox, so I could pull a url, so they are loading slow.</li>
   <li>I am having issues with break points on mobile</li>
   <li>The body layout is blocky in comparison to the header, so I am looking forward to closing those gaps</li>
+  <li>For a reason I have yet to reach the solution as to why my block nav buttons on my Home tab are not filling out the section in mobile</li>
 </ul>
 
 
