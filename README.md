@@ -6,6 +6,14 @@
 
 <p>At this moment I want to have a fixed header and footer but further down if those items are to be fixed I would like to include more useful information. But not today.  Not yet.  Now, for the body, I would like to tab it.  That may change later. For the moment I find it useful in holding to a simple environment for the user to browse.</p>
 
+<h3>What isn't linked</h3>
+
+<ul>
+  <li>The browse button on the header.</li>
+  <li>Newsletter, NOtice and Event blocks on Home Tab</li>
+  <li>The image library images</li>
+</ul>
+<hr />
 <h3>Immediate Issues</h3>
 
 <ul>
@@ -14,7 +22,7 @@
   <li>The body layout is blocky in comparison to the header, so I am looking forward to closing those gaps</li>
   <li>For a reason I have yet to reach the solution as to why my block nav buttons on my Home tab are not filling out the section in mobile</li>
 </ul>
-
+</hr>
 
 <h2>HOW TO PREVIEW</h2>
 <ul type="1">
