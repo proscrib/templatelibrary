@@ -56,21 +56,17 @@ body, html {
 
 /* Responsive */
 
-@media only screen and (max-width:480px) {
-	div.header,span.subhead[class=wrapper]{
-		width:100% !important;
-		padding:10px;
-		margin:0px !important;
-		}
+@media only screen and (max-width:312px) {
 	.hero-image {
-		height:30%;
+		height:60% auto;
 		}
 	.hero-text {
     	text-align: center;
     	position: absolute;
     	top: 10%;
-    	left: 10%;
-    	transform: translate(-10%, -10%);
+    	left: 5%;
+		right:5%;
+    	transform: translate(0%, 0%);
     	color: white;
 		}
 	.logo {
